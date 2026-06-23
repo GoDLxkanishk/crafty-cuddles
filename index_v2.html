@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Crafty Cuddles | Premium V2</title>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--orange:#ff6b1a;--purple:#7b2cbf;--bg:#faf7ff}
+*{margin:0;padding:0;box-sizing:border-box;font-family:Poppins,sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:#222}
+header{position:fixed;top:0;width:100%;display:flex;justify-content:space-between;align-items:center;padding:15px 8%;background:rgba(255,255,255,.9);backdrop-filter:blur(10px);z-index:999}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:24px}
+.logo img{width:70px}
+nav a{text-decoration:none;color:#222;margin-left:18px}
+.hero{min-height:100vh;display:flex;align-items:center;justify-content:space-between;padding:120px 10%;background:linear-gradient(135deg,#fff8f3,#f7eeff);gap:40px}
+.hero img{width:320px;animation:f 4s infinite ease-in-out}
+@keyframes f{50%{transform:translateY(-15px)}}
+h1{font-size:4rem}
+.btn{display:inline-block;padding:14px 28px;border-radius:40px;text-decoration:none;margin:8px}
+.primary{background:linear-gradient(135deg,var(--orange),var(--purple));color:#fff}
+.secondary{background:#fff;color:#222}
+section{padding:90px 10%}
+.title{text-align:center;color:var(--purple);font-size:40px;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:25px}
+.card{background:#fff;border-radius:20px;overflow:hidden;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+.card img{width:100%;height:280px;object-fit:cover}
+.card div{padding:18px}
+.review,.feature{background:#fff;padding:20px;border-radius:20px;box-shadow:0 10px 20px rgba(0,0,0,.08)}
+.insta img{width:100%;height:220px;object-fit:cover;border-radius:20px}
+footer{background:var(--purple);color:#fff;text-align:center;padding:25px}
+.whatsapp{position:fixed;bottom:20px;right:20px;width:65px;height:65px;border-radius:50%;background:#25D366;color:#fff;text-decoration:none;display:flex;justify-content:center;align-items:center;font-size:30px}
+@media(max-width:768px){.hero{flex-direction:column;text-align:center}h1{font-size:2.5rem}nav{display:none}.hero img{width:240px}}
+</style>
+</head>
+<body>
+<header>
+<div class="logo"><img src="logo.png">Crafty Cuddles</div>
+<nav><a href="#products">Products</a><a href="#about">About</a><a href="#reviews">Reviews</a><a href="#instagram">Instagram</a></nav>
+</header>
+
+<section class="hero">
+<div>
+<h1>Crafting Happiness,<br>One Creation at a Time.</h1>
+<p>Handmade Paintings • Crochet • Bookmarks • Custom Gifts</p>
+<a class="btn primary" href="#products">Explore Products</a>
+<a class="btn secondary" href="https://wa.me/919717113641">Order on WhatsApp</a>
+</div>
+<div><img src="logo.png"></div>
+</section>
+
+<section id="products">
+<h2 class="title">Our Creations</h2>
+<div class="grid">
+<div class="card"><img src="IMG-20260620-WA0007.jpg"><div><h3>Pebble Art</h3><p>₹299+</p></div></div>
+<div class="card"><img src="IMG-20260620-WA0013.jpg"><div><h3>Acrylic Painting</h3><p>₹499+</p></div></div>
+<div class="card"><img src="IMG-20260620-WA0025.jpg"><div><h3>Crochet Headband</h3><p>₹199+</p></div></div>
+<div class="card"><img src="IMG-20260620-WA0039.jpg"><div><h3>Flower Bracelet</h3><p>₹149+</p></div></div>
+<div class="card"><img src="IMG-20260620-WA0040.jpg"><div><h3>Custom Bookmark</h3><p>₹99+</p></div></div>
+</div>
+</section>
+
+<section>
+<h2 class="title">Why Choose Us?</h2>
+<div class="grid">
+<div class="feature">💜 Handmade with Love</div>
+<div class="feature">🎨 Unique Designs</div>
+<div class="feature">🎁 Perfect Gifts</div>
+<div class="feature">✨ Custom Orders</div>
+</div>
+</section>
+
+<section id="about">
+<h2 class="title">About Crafty Cuddles</h2>
+<p style="text-align:center;max-width:800px;margin:auto">Crafty Cuddles creates handmade gifts, paintings, crochet products and custom creations made with love.</p>
+</section>
+
+<section id="reviews">
+<h2 class="title">Customer Love</h2>
+<div class="grid">
+<div class="review">⭐⭐⭐⭐⭐<br><br>Amazing handmade quality!</div>
+<div class="review">⭐⭐⭐⭐⭐<br><br>Perfect gift for friends and family.</div>
+<div class="review">⭐⭐⭐⭐⭐<br><br>Beautiful finishing and packaging.</div>
+</div>
+</section>
+
+<section id="instagram">
+<h2 class="title">Instagram Gallery</h2>
+<div class="grid insta">
+<img src="IMG-20260620-WA0007.jpg">
+<img src="IMG-20260620-WA0013.jpg">
+<img src="IMG-20260620-WA0025.jpg">
+<img src="IMG-20260620-WA0039.jpg">
+<img src="IMG-20260620-WA0040.jpg">
+</div>
+</section>
+
+<footer>© 2026 Crafty Cuddles | Handmade with Love, Cuddled Forever 💜</footer>
+<a class="whatsapp" href="https://wa.me/919717113641">💬</a>
+</body>
+</html>
